@@ -77,3 +77,13 @@ Spring에서 AOP가 이 패턴으로 만들어져 있다.
 
 ![image](https://user-images.githubusercontent.com/54675591/152752447-27bfd71f-7415-4f41-8b90-67076d0274e1.png)
 
+### Decorator pattern
+
+데코레이터 패턴은 기존 뼈대(클래스)는 유지하되, 이후 필요한 형태로 꾸밀 때 사용한다. 확장이 필요한 경우 상속의 대안으로도 활용한다. SOLID 중에서 개방폐쇄 원칙(OCP)과 의존 역전 원칙(DIP)를 사용한다.
+
+현실 세계에서는 커피를 예로 들 수 있다. 아메리카노 + (우유)+카라멜 or아메리카노 + 시럽
+
+원본을 유지하되 어떤 것을 첨가하면서 확장해가는 것
+
+![image](https://user-images.githubusercontent.com/54675591/152766547-271ca2c5-f97e-4fe0-8957-3e23c88c0172.png)
+
