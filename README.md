@@ -87,3 +87,14 @@ Spring에서 AOP가 이 패턴으로 만들어져 있다.
 
 ![image](https://user-images.githubusercontent.com/54675591/152766547-271ca2c5-f97e-4fe0-8957-3e23c88c0172.png)
 
+### Observer pattern
+
+관찰자 패턴은 변화가 일어 났을 때, 미리 등록된 다른 클래스에 통보해주는 패턴을 구현한 것이다. 많이 보이는 곳은 event listener에서 해당 패턴을 사용하고 있다.
+
+![image-20220207193051506](/Users/ksj/Library/Application Support/typora-user-images/image-20220207193051506.png)
+
+### Facade pattern
+
+Facade는 건물의 앞쪽 정면 이라는 뜻을 가진다. 여러 개의 객체와 실제 사용하는 서브 객체의 사이에 복잡한 의존관계가 있을 때, 중간에 facade 라는 객체를 두고, 여기서 제공하는 interface만을 활용하여 기능을 사용하는 방식이다. Facade는 자신이 가지고 있는 각 클래스의 기능을 명확히 알아야 한다.
+
+![image](https://user-images.githubusercontent.com/54675591/152812336-b40e7aa0-abdb-4992-8b42-d5ae54841fa8.png)
