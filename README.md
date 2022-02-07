@@ -98,3 +98,18 @@ Spring에서 AOP가 이 패턴으로 만들어져 있다.
 Facade는 건물의 앞쪽 정면 이라는 뜻을 가진다. 여러 개의 객체와 실제 사용하는 서브 객체의 사이에 복잡한 의존관계가 있을 때, 중간에 facade 라는 객체를 두고, 여기서 제공하는 interface만을 활용하여 기능을 사용하는 방식이다. Facade는 자신이 가지고 있는 각 클래스의 기능을 명확히 알아야 한다.
 
 ![image](https://user-images.githubusercontent.com/54675591/152812336-b40e7aa0-abdb-4992-8b42-d5ae54841fa8.png)
+
+### Strategy pattern
+
+전략 패턴으로 불리며, 객체지향의 꽃이다.
+
+유사한 행위들을 캡슐화하여, 객체의 행위를 바꾸고 싶은 경우 직접 변경하는 것이 아닌 전략만 변경 하여, 유연하게 확장하는 패턴 SOLID중에서 개방폐쇄 원칙(OCP)과 의존 역전 원칙(DIP)를 따른다.
+
+![image](https://user-images.githubusercontent.com/54675591/152816893-46edebd8-8d13-4dab-9f53-e8cb78680e45.png)
+
+위 다이어그램에서
+
+* 전략 메서드를 가진 전략 객체(Normal Strategy, Base64 Strategy)
+* 전략 객체를 사용하는 컨텍스트(Encoder)
+* 전략 객체를 생성해 컨텍스트에 주입하는 클라이언트(Application)
+

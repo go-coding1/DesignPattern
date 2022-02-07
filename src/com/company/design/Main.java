@@ -8,11 +8,12 @@ import com.company.design.singleton.AClazz;
 import com.company.design.singleton.BClazz;
 import com.company.design.singleton.SigletonMain;
 import com.company.design.singleton.SocketClient;
+import com.company.design.strategy.StrategyMain;
 
 public class Main {
 
     public static void main(String[] args) {
-        FacadeMain facadeMain = new FacadeMain();
-        facadeMain.main();
+        StrategyMain strategyMain = new StrategyMain();
+        strategyMain.main();
     }
 }
