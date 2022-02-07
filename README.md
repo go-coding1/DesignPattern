@@ -29,3 +29,39 @@ Singleton 패턴은 어떠한 클래스(객체)가 유일하게 1개만 존재�
 > BClazz.java
 >
 > ​	SocketClient.java로 부터 Client객체를 제공받아 사용하는 클래스
+
+
+
+### Adapter pattern
+
+Adapter는 실생활에서 100v를 220v로 변경해주거나, 그 반대로 해주는 흔히 돼지코 라고 불리는 변환기를 예로 들 수 있다.
+
+호환성이 없는 기존 클래스의 인터페이스를 변환하여 재사용 할 수 있도록 한다.
+
+SOLID중 개방폐쇄 원칙(OCP)를 따른다.
+
+![image](https://user-images.githubusercontent.com/54675591/152748231-2acfe7bb-af7b-4c65-8cd9-6b28cb552cc9.png)
+
+가운데 Adapter라는 클래스를 두고 변환 할 수 있게 한다.
+
+```java
+package com.company.design.adapter;
+
+//220v를 110v로 변환해주는 Adapter 클래스 생성
+public class SocketAdapter implements Electronic110V{
+    private Electronic220V electronic220V;
+
+    public SocketAdapter(Electronic220V electronic220V){
+        this.electronic220V = electronic220V;
+    }
+
+    @Override
+    public void powerOn() {
+        electronic220V.connect();
+    }
+}
+
+```
+
+
+
